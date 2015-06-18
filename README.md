@@ -15,9 +15,9 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 To achieve the tidy.data file, the following steps were taken:
 
 * Both training and testing datasets were read and merged into a single file.
-* Only the variables related with the mean and standard deviation of the measurements were kept. The list of these variables and their descriptions can be found in the CODEBOOK FILE included in this repository.
+* Only the variables related with the mean and standard deviation of the measurements were kept. The list of these variables and their descriptions can be found in the Codebook.md included in this repository.
 * The file with the activities peformed by the participants was also included in the same dataset and labeled accordingly.
 * The identification of the participants (subjects) was also included in the dataset.
 * The resulting data was grouped by subject and activity to facilitate the visualization of the data.
-* The TIDY.DATA is file containing the resulting data after these steps were taken.
-* All the detailed description of the code used to peform the steps mentioned above are found in the CODE FILE.
+* The tidy_data is file containing the resulting data after these steps were taken.
+* All the detailed description of the code used to peform the steps mentioned above are found in the run_analysis.R file.
