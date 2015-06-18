@@ -13,6 +13,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ====================================================================
 
 To achieve the tidy.data file, the following steps were taken:
+====================================================================
 
 * Both training and testing datasets were read and merged into a single file.
 * Only the variables related with the mean and standard deviation of the measurements were kept. The list of these variables and their descriptions can be found in the Codebook.md included in this repository.
