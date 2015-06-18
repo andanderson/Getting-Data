@@ -24,10 +24,10 @@ data <- rbind(train,test)
 
 
 #Selecting data frame with the variables "mean" and std
-library(stringr)
-var.mean <- str_detect(names(data),"mean()")
-var.std <- str_detect(names(data),"std()")
-var <- as.logical(var.mean + var.std)
+##library(stringr)
+var.mean <- grep("mean()",names(data), fixed = TRUE)
+var.std <- grep("std()",names(data), fixed = TRUE)
+var <- c(var.mean, var.std)
 data. <- data[,var]
 
 
@@ -53,7 +53,7 @@ data <- rename(data,subject = V1)
 
 #Melting
 library(reshape2)
-data.melt <- melt(data, id = c("subject","activity"), measure.vars = names(data)[2:80])
+data.melt <- melt(data, id = c("subject","activity"), measure.vars = names(data)[2:67])
 tidy.data <- dcast(data.melt, subject + activity ~ variable, mean)
 
 #WRITING THE DATA
