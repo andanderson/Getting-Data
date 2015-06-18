@@ -29,11 +29,13 @@ fBodyGyroMag
 fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
+=================
 
 mean(): Mean value
 std(): Standard deviation
 
 Here is the complete list of variables in the tidy_data.txt file:
+==================
 
 subject - Identification of the participant
 activity - Activity the participant was undertaking while the measurements were captured.
